@@ -10,8 +10,8 @@ import pickle
 
 import warnings
 warnings.filterwarnings('ignore')
-loaded_model=pickle.load(open('train2_model.sav','rb'))
-input_data = (5.2,0.44,0.04,1.4,0.036,43,119,0.9894,3.36,0.33,12.1)
+loaded_model=pickle.load(open('train3_model.sav','rb'))
+input_data = (7.9,0.18,0.37,1.2,0.04,16,75,0.992,3.18,0.63,10.8)
 
 # Changing the input data to numpy array
 input_data_asnumpyarray=np.asarray(input_data)

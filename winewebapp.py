@@ -3,14 +3,13 @@ import pickle
 import streamlit as st
 
 # Loading the saved model
-loaded_model = pickle.load(open('train2_model.sav', 'rb'))
-
+loaded_model=pickle.load(open('C:/Users/LENOVO/OneDrive/Desktop/wineprediction/train3_model.sav','rb'))
 def wineprediction(input_data):
     # Changing the input data to numpy array
-    input_data_asnumpyarray = np.asarray(input_data)
+    input_data_as_numpy_array = np.asarray(input_data)
 
     ## Reshape the data as we are predicting label for only one instance
-    input_data_reshaped = input_data_asnumpyarray.reshape(1, -1)
+    input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
 
     prediction = loaded_model.predict(input_data_reshaped)
     if (prediction[0] == 1):
