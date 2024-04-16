@@ -9,7 +9,7 @@ import pickle
 import streamlit as st
 
 # Loading the saved model
-loaded_model = pickle.load(open("C:/Users/LENOVO/OneDrive/Desktop/ML/train2_model.sav", 'rb'))
+loaded_model = pickle.load(open("C:/Users/LENOVO/OneDrive/Desktop/wineprediction/train2_model.sav", 'rb'))
 
 def wineprediction(input_data):
     # Changing the input data to numpy array

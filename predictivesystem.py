@@ -10,7 +10,7 @@ import pickle
 
 import warnings
 warnings.filterwarnings('ignore')
-loaded_model=pickle.load(open("C:/Users/LENOVO/OneDrive/Desktop/ML/train2_model.sav",'rb'))
+loaded_model=pickle.load(open("C:/Users/LENOVO/OneDrive/Desktop/wineprediction/train2_model.sav",'rb'))
 input_data = (5.2,0.44,0.04,1.4,0.036,43,119,0.9894,3.36,0.33,12.1)
 
 # Changing the input data to numpy array
